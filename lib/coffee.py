@@ -6,4 +6,7 @@ class Coffee:
         self.price = price
 
     def tip(self):
-        pass
+        print("This coffee is great, here’s a tip!")
+
+coffee = Coffee(12, 200)
+coffee.tip()
