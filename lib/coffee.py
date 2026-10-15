@@ -9,17 +9,15 @@ class Coffee:
         print("This coffee is great, here’s a tip!")
         self.price += 1
     
-    def specify_size(self, size):
 
-        if size not in ["Small", "Medium", "Large"]:
-           print("size must be Small, Medium, or Large")
-        else:
-            self.size = size
 
-coffee = Coffee(12, 200)
+        
 
-coffee.specify_size("small")
-print(coffee.size)
-coffee.tip()
-print(coffee.price)
+coffee = Coffee("small", 200)
+if coffee.size not in ["Small", "Medium", "Large"]:
+    print("size must be Small, Medium, or Large")
+else:
+    print(coffee.size)
+    coffee.tip()
+    print(coffee.price)
 
