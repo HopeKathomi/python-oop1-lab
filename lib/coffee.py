@@ -10,8 +10,8 @@ class Coffee:
     
     def specify_size(self, size):
 
-        if size not in ["small", "medium", "large"]:
-            raise ValueError("size must be Small, Medium, or Large")
+        if size not in ["Small", "Medium", "Large"]:
+           print("size must be Small, Medium, or Large")
         else:
             self.size = size
 
