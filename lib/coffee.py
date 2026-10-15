@@ -17,15 +17,7 @@ class Coffee:
 
 coffee = Coffee(12, 200)
 
-while True:
-    print("Enter 'q' to quit")
-    s = input("Enter size: ")
-    coffee.specify_size(s)
-
-    if s == "q":
-        break
-
-    # print("You entered: ", s)
-
+coffee.specify_size("small")
+print(coffee.size)
 coffee.tip()
 
