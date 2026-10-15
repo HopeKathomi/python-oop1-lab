@@ -2,6 +2,9 @@
 
 class Coffee:
     def __init__(self, size, price):
+        if size not in ["Small", "Medium", "Large"]:
+            print("size must be Small, Medium, or Large")
+
         self.size = size
         self.price = price
 
@@ -11,10 +14,5 @@ class Coffee:
          
 
 coffee = Coffee("very Small", 200)
-if coffee.size not in ["Small", "Medium", "Large"]:
-    print("size must be Small, Medium, or Large")
-else:
-    print(coffee.size)
-    coffee.tip()
-    print(coffee.price)
+coffee.tip()
 
