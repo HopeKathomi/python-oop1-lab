@@ -7,6 +7,7 @@ class Coffee:
 
     def tip(self):
         print("This coffee is great, here’s a tip!")
+        self.prize += 1
     
     def specify_size(self, size):
 
@@ -20,4 +21,5 @@ coffee = Coffee(12, 200)
 coffee.specify_size("small")
 print(coffee.size)
 coffee.tip()
+print(coffee.size)
 
