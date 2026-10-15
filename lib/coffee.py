@@ -11,7 +11,7 @@ class Coffee:
     def specify_size(self, size):
 
         if size not in ["small", "medium", "large"]:
-            print("size must be small, medium or Large")
+            print("size must be Small, Medium or Large")
         else:
             self.size = size
 
