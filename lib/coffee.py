@@ -8,12 +8,9 @@ class Coffee:
     def tip(self):
         print("This coffee is great, here’s a tip!")
         self.price += 1
-    
+         
 
-
-        
-
-coffee = Coffee("small", 200)
+coffee = Coffee("very Small", 200)
 if coffee.size not in ["Small", "Medium", "Large"]:
     print("size must be Small, Medium, or Large")
 else:
