@@ -2,9 +2,6 @@
 
 class Coffee:
     def __init__(self, size, price):
-        if size not in ["Small", "Medium", "Large"]:
-            print("size must be Small, Medium, or Large")
-
         self.size = size
         self.price = price
 
